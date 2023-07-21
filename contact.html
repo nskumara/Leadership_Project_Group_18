@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Disaster Preparedness in Japan</title>
+  <link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand topic" href="#">
+        <img src="img/imgd.svg" alt="" width="30" height="24" class="navbar-img">
+        <h2>Disaster Preparedness in Japan</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html"><b>Articles</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html"><b>Resources</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><b>Contact Us</b></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="contact">
+
+          <div id="contact-form-container">
+            <h2>Send us a message</h2>
+        <form id="contact-form" method="POST" action="process-form.php">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<br>
+          <div id="contact-details">
+            <h2>Emergency Contact Details</h2>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">General Emergency</h5>
+                <p class="card-text">Emergency Services: 110</p>
+                <p class="card-text"><strong>Address:</strong> 123 Main Street, Tokyo, Japan</p>
+                <p class="card-text"><strong>Phone:</strong> +1 234 567 890</p>
+                <p class="card-text"><strong>Email:</strong> info@disaster-preparedness.com</p>
+              </div>
+            </div>
+            
+  
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">General Emergency</h5>
+                <p class="card-text">Emergency Services: 110</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Medical Emergencies</h5>
+                <p class="card-text">Ambulance, Medical Emergency: 119</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fire and Rescue</h5>
+                <p class="card-text">Fire Department, Fire Emergency: 119</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Police</h5>
+                <p class="card-text">Police Emergency: 110</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Natural DisastersNatural Disasters</h5>
+                <p class="card-text">Earthquake, Tsunami, and Volcanic Activity: Japan Meteorological Agency (JMA)</p>
+                <p class="card-text">Typhoon and Severe Weather: Japan Meteorological Agency (JMA)</p>
+              </div>
+              </div>
+
+            <div class="card">
+              <div class="card-body">
+              <h5 class="card-title">Nuclear Emergencies</h5>
+              <p class="card-text">Nuclear Emergency: Nuclear Regulation Authority (NRA)</p>
+            </div>
+            </div>
+   
+
+    </main>
+    </section>
+
+
+
+  <script>
+    // Initialize Google Map
+    initMap();
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE}, // Replace with the coordinates of your desired location
+          zoom: 15 // Adjust the zoom level as needed
+        });
+      }
+  </script>
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    // Add scrolled class to navbar on scroll
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+<script>
+    // Initialize Google Map
+    initMap();
+  </script>
+</body>
+</html>

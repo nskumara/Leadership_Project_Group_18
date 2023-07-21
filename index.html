@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <title>Disaster Preparedness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand topic" href="#">
+        <img src="img/imgd.svg" alt="" width="30" height="24" class="navbar-img">
+        <h2>Disaster Preparedness in Japan</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html"><b>Articles</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html"><b>Resources</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><b>Contact Us</b></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <h2>Welcome to Disaster Preparedness in Japan</h2>
+      <p>Your go-to resource for staying safe and ready during emergencies. From earthquakes to typhoons, our website offers essential tips, guides, and contact information to help you navigate any situation. Be prepared and stay informed with Disaster Preparedness in Japan.</p>
+      <!--<img src="img1.png" alt="Dissenter Preparedness Image" width="560" height="315">-->
+      <p>Check out the video below to learn more:</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1IVbxpDvRvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <div class="background-animation"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    // Add scrolled class to navbar on scroll
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
+
